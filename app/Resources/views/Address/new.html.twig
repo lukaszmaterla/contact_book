@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h2>{{ contact.name }}</h2>
+    {{ form_start(formAddress) }}
+    {{ form_widget(formAddress) }}
+    <button type="submit">Save</button>
+    {{ form_end(formAddress) }}
+{% endblock %}

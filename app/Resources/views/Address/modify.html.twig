@@ -1,0 +1,8 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    {{ form_start(formAddress) }}
+    {{ form_widget(formAddress) }}
+     <button type="submit" VALUE="">Zapisz zmiany</button>
+    {{ form_end(formAddress) }}
+{% endblock %}

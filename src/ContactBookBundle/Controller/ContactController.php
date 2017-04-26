@@ -44,11 +44,13 @@ class ContactController extends Controller
     {
         $contact = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->find($id);
 
+        $addresses = $this->getDoctrine()->getRepository('ContactBookBundle:Address')->findAll();
+
         if(!$contact){
 
             throw $this->createNotFoundException("Contact not Found");
         }
-        return ['contact'=> $contact];
+        return ['contact'=> $contact, 'addresses'=>$addresses];
     }
 
     /**
@@ -83,7 +85,7 @@ class ContactController extends Controller
 
     /**
      * @Route("/{id}/modify")
-     * @Template(":Contact:new.html.twig")
+     * @Template(":Contact:modify.html.twig")
      */
 
     public function modifyAction(Request $request, $id)
@@ -93,7 +95,7 @@ class ContactController extends Controller
             throw $this->createNotFoundException("Contact not Found");
         }
 
-        $form = $this->createForm(ContactType::class, $contact);
+        $form = $this->createForm(ContactType::class, $contact, ['action' => $this->generateUrl('contactbook_contact_modify', ['id'=>$contact->getId()])]);
         $form->handleRequest($request);
 
         if($form->isValid() && $form->isSubmitted())
