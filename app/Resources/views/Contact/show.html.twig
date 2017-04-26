@@ -1,0 +1,7 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h2>{{ contact.name }}</h2>
+    <p>{{ contact.description }}</p>
+    <a href="{{ path('contactbook_contact_showall') }}">Pokaż wszystkie kontakty</a>
+{% endblock %}
