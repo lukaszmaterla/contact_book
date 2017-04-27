@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e057b0bd-dd8d-4787-98b1-6793f763a5df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Address/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Contact/modify.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Entity/Address.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Form/AddressType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Repository/AddressRepository.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Phone/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Controller/PhoneController.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Contact/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Contact/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Address/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Address/new.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Contact/show_all.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Contact/show_all.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php" afterPath="$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php" />
     </list>
@@ -30,31 +25,42 @@
       <file leaf-file-name="ContactController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="472">
+              <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="19" />
               <folding>
                 <element signature="e#48#85#0#PHP" expanded="true" />
-                <element signature="e#679#710#1#PHP" expanded="true" />
-                <element signature="e#1010#1036#0#PHP" expanded="true" />
                 <element signature="e#1327#1354#1#PHP" expanded="true" />
                 <element signature="e#1426#1453#1#PHP" expanded="true" />
-                <element signature="e#1825#1852#1#PHP" expanded="true" />
-                <element signature="e#2062#2089#1#PHP" expanded="true" />
-                <element signature="e#2358#2387#1#PHP" expanded="true" />
-                <element signature="e#2607#2634#1#PHP" expanded="true" />
-                <element signature="e#2849#2877#0#PHP" expanded="true" />
-                <element signature="e#3135#3161#0#PHP" expanded="true" />
+                <element signature="e#1551#1576#1#PHP" expanded="true" />
+                <element signature="e#2033#2060#1#PHP" expanded="true" />
+                <element signature="e#2287#2314#1#PHP" expanded="true" />
+                <element signature="e#2583#2612#1#PHP" expanded="true" />
+                <element signature="e#2832#2859#1#PHP" expanded="true" />
+                <element signature="e#3074#3102#0#PHP" expanded="true" />
+                <element signature="e#3360#3386#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddressRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Repository/AddressRepository.php">
+      <file leaf-file-name="PhoneController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/PhoneController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2200">
+              <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+              <folding>
+                <element signature="e#48#83#0#PHP" expanded="true" />
+                <element signature="e#603#630#1#PHP" expanded="true" />
+                <element signature="e#876#904#0#PHP" expanded="true" />
+                <element signature="e#1285#1311#0#PHP" expanded="true" />
+                <element signature="e#1599#1624#1#PHP" expanded="true" />
+                <element signature="e#1793#1820#1#PHP" expanded="true" />
+                <element signature="e#2079#2105#0#PHP" expanded="true" />
+                <element signature="e#2354#2381#1#PHP" expanded="true" />
+                <element signature="e#2552#2577#1#PHP" expanded="true" />
+                <element signature="e#2790#2816#0#PHP" expanded="true" />
+                <element signature="e#3111#3137#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,69 +68,48 @@
       <file leaf-file-name="AddressController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="944">
-              <caret line="93" column="93" lean-forward="false" selection-start-line="93" selection-start-column="93" selection-end-line="93" selection-end-column="93" />
+            <state relative-caret-position="1516">
+              <caret line="70" column="82" lean-forward="false" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="82" />
               <folding>
                 <element signature="e#48#85#0#PHP" expanded="true" />
                 <element signature="e#615#642#1#PHP" expanded="true" />
                 <element signature="e#917#950#0#PHP" expanded="true" />
                 <element signature="e#1344#1370#0#PHP" expanded="true" />
-                <element signature="e#1729#1756#1#PHP" expanded="true" />
-                <element signature="e#1929#1956#1#PHP" expanded="true" />
-                <element signature="e#2177#2205#0#PHP" expanded="true" />
-                <element signature="e#2508#2534#0#PHP" expanded="true" />
-                <element signature="e#2807#2834#1#PHP" expanded="true" />
-                <element signature="e#3007#3034#1#PHP" expanded="true" />
-                <element signature="e#3295#3321#0#PHP" expanded="true" />
+                <element signature="e#1726#1753#1#PHP" expanded="true" />
+                <element signature="e#1926#1953#1#PHP" expanded="true" />
+                <element signature="e#2174#2202#0#PHP" expanded="true" />
+                <element signature="e#2505#2531#0#PHP" expanded="true" />
+                <element signature="e#3313#3339#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modify.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modify.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/modify.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="572">
+              <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-                <element signature="e#142#169#0#Twig" expanded="true" />
                 <element signature="e#227#253#0#Twig" expanded="true" />
-                <element signature="e#313#344#0#Twig" expanded="true" />
-                <element signature="e#663#689#0#Twig" expanded="true" />
-                <element signature="e#775#801#0#Twig" expanded="true" />
+                <element signature="e#369#400#0#Twig" expanded="true" />
+                <element signature="e#673#699#0#Twig" expanded="true" />
+                <element signature="e#785#811#0#Twig" expanded="true" />
+                <element signature="e#1044#1070#0#Twig" expanded="true" />
+                <element signature="e#1266#1290#0#Twig" expanded="true" />
+                <element signature="e#1374#1398#0#Twig" expanded="true" />
+                <element signature="e#1822#1848#0#Twig" expanded="true" />
+                <element signature="e#1934#1960#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/new.html.twig">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Phone/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="176">
+              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
                 <element signature="e#12#28#0#Twig" expanded="true" />
               </folding>
@@ -132,34 +117,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2618">
-              <caret line="137" column="5" lean-forward="false" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
+            <state relative-caret-position="176">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
-                <element signature="e#44#92#0#PHP" expanded="true" />
+                <element signature="e#12#28#0#Twig" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/AddressType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/ContactType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -177,16 +142,20 @@
         <option value="$PROJECT_DIR$/app/Resources/views/new.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Contact/show_all.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Contact/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php" />
         <option value="$PROJECT_DIR$/src/ContactBookBundle/Entity/Address.php" />
         <option value="$PROJECT_DIR$/src/ContactBookBundle/Form/AddressType.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Address/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Address/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig" />
-        <option value="$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Contact/modify.html.twig" />
+        <option value="$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php" />
+        <option value="$PROJECT_DIR$/src/ContactBookBundle/Entity/Phone.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Phone/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/ContactBookBundle/Form/PhoneType.php" />
+        <option value="$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Address/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/ContactBookBundle/Controller/PhoneController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php" />
       </list>
     </option>
   </component>
@@ -198,10 +167,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1857" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -411,6 +380,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Phone" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact_book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact_book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Contact" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -552,28 +547,30 @@
       <option name="presentableId" value="Default" />
       <updated>1493123465301</updated>
       <workItem from="1493123466832" duration="4300000" />
-      <workItem from="1493197352927" duration="27113000" />
+      <workItem from="1493197352927" duration="28158000" />
+      <workItem from="1493288702153" duration="145000" />
+      <workItem from="1493302535147" duration="7961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31413000" />
+    <option name="totallyTimeSpent" value="40564000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1514649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15478165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19415449" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19415449" sideWeight="0.49806523" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -595,20 +592,253 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+            <element signature="e#1327#1354#1#PHP" expanded="true" />
+            <element signature="e#1426#1453#1#PHP" expanded="true" />
+            <element signature="e#1551#1576#1#PHP" expanded="true" />
+            <element signature="e#2033#2060#1#PHP" expanded="true" />
+            <element signature="e#2287#2314#1#PHP" expanded="true" />
+            <element signature="e#2583#2612#1#PHP" expanded="true" />
+            <element signature="e#2832#2859#1#PHP" expanded="true" />
+            <element signature="e#3074#3102#0#PHP" expanded="true" />
+            <element signature="e#3360#3386#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Repository/AddressRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1936">
+          <caret line="93" column="93" lean-forward="false" selection-start-line="93" selection-start-column="93" selection-end-line="93" selection-end-column="93" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+            <element signature="e#615#642#1#PHP" expanded="true" />
+            <element signature="e#917#950#0#PHP" expanded="true" />
+            <element signature="e#1344#1370#0#PHP" expanded="true" />
+            <element signature="e#1726#1753#1#PHP" expanded="true" />
+            <element signature="e#1926#1953#1#PHP" expanded="true" />
+            <element signature="e#2174#2202#0#PHP" expanded="true" />
+            <element signature="e#2505#2531#0#PHP" expanded="true" />
+            <element signature="e#3313#3339#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/modify.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="137" column="5" lean-forward="false" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/AddressType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/ContactType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#227#253#0#Twig" expanded="true" />
+            <element signature="e#369#400#0#Twig" expanded="true" />
+            <element signature="e#673#699#0#Twig" expanded="true" />
+            <element signature="e#785#811#0#Twig" expanded="true" />
+            <element signature="e#1044#1070#0#Twig" expanded="true" />
+            <element signature="e#1266#1290#0#Twig" expanded="true" />
+            <element signature="e#1374#1398#0#Twig" expanded="true" />
+            <element signature="e#1822#1848#0#Twig" expanded="true" />
+            <element signature="e#1934#1960#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+            <element signature="e#1327#1354#1#PHP" expanded="true" />
+            <element signature="e#1426#1453#1#PHP" expanded="true" />
+            <element signature="e#1551#1576#1#PHP" expanded="true" />
+            <element signature="e#2033#2060#1#PHP" expanded="true" />
+            <element signature="e#2287#2314#1#PHP" expanded="true" />
+            <element signature="e#2583#2612#1#PHP" expanded="true" />
+            <element signature="e#2832#2859#1#PHP" expanded="true" />
+            <element signature="e#3074#3102#0#PHP" expanded="true" />
+            <element signature="e#3360#3386#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Repository/AddressRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1936">
+          <caret line="93" column="93" lean-forward="false" selection-start-line="93" selection-start-column="93" selection-end-line="93" selection-end-column="93" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+            <element signature="e#615#642#1#PHP" expanded="true" />
+            <element signature="e#917#950#0#PHP" expanded="true" />
+            <element signature="e#1344#1370#0#PHP" expanded="true" />
+            <element signature="e#1726#1753#1#PHP" expanded="true" />
+            <element signature="e#1926#1953#1#PHP" expanded="true" />
+            <element signature="e#2174#2202#0#PHP" expanded="true" />
+            <element signature="e#2505#2531#0#PHP" expanded="true" />
+            <element signature="e#3313#3339#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/modify.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="137" column="5" lean-forward="false" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/AddressType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/ContactType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#227#253#0#Twig" expanded="true" />
+            <element signature="e#369#400#0#Twig" expanded="true" />
+            <element signature="e#673#699#0#Twig" expanded="true" />
+            <element signature="e#785#811#0#Twig" expanded="true" />
+            <element signature="e#1044#1070#0#Twig" expanded="true" />
+            <element signature="e#1266#1290#0#Twig" expanded="true" />
+            <element signature="e#1374#1398#0#Twig" expanded="true" />
+            <element signature="e#1822#1848#0#Twig" expanded="true" />
+            <element signature="e#1934#1960#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#48#85#0#PHP" expanded="true" />
-            <element signature="e#679#710#1#PHP" expanded="true" />
-            <element signature="e#1010#1036#0#PHP" expanded="true" />
             <element signature="e#1327#1354#1#PHP" expanded="true" />
             <element signature="e#1426#1453#1#PHP" expanded="true" />
-            <element signature="e#1825#1852#1#PHP" expanded="true" />
-            <element signature="e#2062#2089#1#PHP" expanded="true" />
-            <element signature="e#2358#2387#1#PHP" expanded="true" />
-            <element signature="e#2607#2634#1#PHP" expanded="true" />
-            <element signature="e#2849#2877#0#PHP" expanded="true" />
-            <element signature="e#3135#3161#0#PHP" expanded="true" />
+            <element signature="e#1551#1576#1#PHP" expanded="true" />
+            <element signature="e#2033#2060#1#PHP" expanded="true" />
+            <element signature="e#2287#2314#1#PHP" expanded="true" />
+            <element signature="e#2583#2612#1#PHP" expanded="true" />
+            <element signature="e#2832#2859#1#PHP" expanded="true" />
+            <element signature="e#3074#3102#0#PHP" expanded="true" />
+            <element signature="e#3360#3386#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,9 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,25 +896,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/show_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-            <element signature="e#150#174#0#Twig" expanded="false" />
-            <element signature="e#272#298#0#Twig" expanded="false" />
-            <element signature="e#364#390#0#Twig" expanded="false" />
-            <element signature="e#535#564#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,21 +934,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2618">
-          <caret line="137" column="5" lean-forward="false" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
-          <folding>
-            <element signature="e#44#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/ContactType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="330">
           <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -751,46 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#85#0#PHP" expanded="true" />
-            <element signature="e#679#710#1#PHP" expanded="true" />
-            <element signature="e#1010#1036#0#PHP" expanded="true" />
-            <element signature="e#1327#1354#1#PHP" expanded="true" />
-            <element signature="e#1426#1453#1#PHP" expanded="true" />
-            <element signature="e#1825#1852#1#PHP" expanded="true" />
-            <element signature="e#2062#2089#1#PHP" expanded="true" />
-            <element signature="e#2358#2387#1#PHP" expanded="true" />
-            <element signature="e#2607#2634#1#PHP" expanded="true" />
-            <element signature="e#2849#2877#0#PHP" expanded="true" />
-            <element signature="e#3135#3161#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Repository/AddressRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -799,22 +960,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php">
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Entity/Contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="93" column="93" lean-forward="false" selection-start-line="93" selection-start-column="93" selection-end-line="93" selection-end-column="93" />
+        <state relative-caret-position="-2146">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Form/PhoneType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Phone/modify.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Phone/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="19" />
           <folding>
             <element signature="e#48#85#0#PHP" expanded="true" />
-            <element signature="e#615#642#1#PHP" expanded="true" />
-            <element signature="e#917#950#0#PHP" expanded="true" />
-            <element signature="e#1344#1370#0#PHP" expanded="true" />
-            <element signature="e#1729#1756#1#PHP" expanded="true" />
-            <element signature="e#1929#1956#1#PHP" expanded="true" />
-            <element signature="e#2177#2205#0#PHP" expanded="true" />
-            <element signature="e#2508#2534#0#PHP" expanded="true" />
-            <element signature="e#2807#2834#1#PHP" expanded="true" />
-            <element signature="e#3007#3034#1#PHP" expanded="true" />
-            <element signature="e#3295#3321#0#PHP" expanded="true" />
+            <element signature="e#1327#1354#1#PHP" expanded="true" />
+            <element signature="e#1426#1453#1#PHP" expanded="true" />
+            <element signature="e#1551#1576#1#PHP" expanded="true" />
+            <element signature="e#2033#2060#1#PHP" expanded="true" />
+            <element signature="e#2287#2314#1#PHP" expanded="true" />
+            <element signature="e#2583#2612#1#PHP" expanded="true" />
+            <element signature="e#2832#2859#1#PHP" expanded="true" />
+            <element signature="e#3074#3102#0#PHP" expanded="true" />
+            <element signature="e#3360#3386#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,17 +1023,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Entity/Phone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-782">
+          <caret line="37" column="91" lean-forward="false" selection-start-line="37" selection-start-column="91" selection-end-line="37" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Contact/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="572">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#227#253#0#Twig" expanded="true" />
+            <element signature="e#369#400#0#Twig" expanded="true" />
+            <element signature="e#673#699#0#Twig" expanded="true" />
+            <element signature="e#785#811#0#Twig" expanded="true" />
+            <element signature="e#1044#1070#0#Twig" expanded="true" />
+            <element signature="e#1266#1290#0#Twig" expanded="true" />
+            <element signature="e#1374#1398#0#Twig" expanded="true" />
+            <element signature="e#1822#1848#0#Twig" expanded="true" />
+            <element signature="e#1934#1960#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1516">
+          <caret line="70" column="82" lean-forward="false" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="82" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+            <element signature="e#615#642#1#PHP" expanded="true" />
+            <element signature="e#917#950#0#PHP" expanded="true" />
+            <element signature="e#1344#1370#0#PHP" expanded="true" />
+            <element signature="e#1726#1753#1#PHP" expanded="true" />
+            <element signature="e#1926#1953#1#PHP" expanded="true" />
+            <element signature="e#2174#2202#0#PHP" expanded="true" />
+            <element signature="e#2505#2531#0#PHP" expanded="true" />
+            <element signature="e#3313#3339#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactBookBundle/Controller/PhoneController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2200">
+          <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+          <folding>
+            <element signature="e#48#83#0#PHP" expanded="true" />
+            <element signature="e#603#630#1#PHP" expanded="true" />
+            <element signature="e#876#904#0#PHP" expanded="true" />
+            <element signature="e#1285#1311#0#PHP" expanded="true" />
+            <element signature="e#1599#1624#1#PHP" expanded="true" />
+            <element signature="e#1793#1820#1#PHP" expanded="true" />
+            <element signature="e#2079#2105#0#PHP" expanded="true" />
+            <element signature="e#2354#2381#1#PHP" expanded="true" />
+            <element signature="e#2552#2577#1#PHP" expanded="true" />
+            <element signature="e#2790#2816#0#PHP" expanded="true" />
+            <element signature="e#3111#3137#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/modify.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Address/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#12#28#0#Twig" expanded="true" />
-            <element signature="e#142#169#0#Twig" expanded="true" />
-            <element signature="e#227#253#0#Twig" expanded="true" />
-            <element signature="e#313#344#0#Twig" expanded="true" />
-            <element signature="e#663#689#0#Twig" expanded="true" />
-            <element signature="e#775#801#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>

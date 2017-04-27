@@ -42,9 +42,16 @@ class Contact
 
     private $addresses;
 
+    /**
+     * @ORM\OneToMany(targetEntity="ContactBookBundle\Entity\Phone", mappedBy="contact")
+     *
+     */
+    private $phones;
+
     public function __construct()
     {
         $this->addresses = new ArrayCollection();
+        $this->phones = new ArrayCollection();
     }
 
 
@@ -135,5 +142,38 @@ class Contact
     public function getAddresses()
     {
         return $this->addresses;
+    }
+
+    /**
+     * Add phones
+     *
+     * @param \ContactBookBundle\Entity\Phone $phones
+     * @return Contact
+     */
+    public function addPhone(\ContactBookBundle\Entity\Phone $phones)
+    {
+        $this->phones[] = $phones;
+
+        return $this;
+    }
+
+    /**
+     * Remove phones
+     *
+     * @param \ContactBookBundle\Entity\Phone $phones
+     */
+    public function removePhone(\ContactBookBundle\Entity\Phone $phones)
+    {
+        $this->phones->removeElement($phones);
+    }
+
+    /**
+     * Get phones
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPhones()
+    {
+        return $this->phones;
     }
 }

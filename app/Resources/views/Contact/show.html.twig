@@ -5,9 +5,34 @@
     <p>{{ contact.description }}</p>
     <a href="{{ path('contactbook_contact_showall') }}">Pokaż wszystkie kontakty</a>
     <a href="{{ path('contactbook_contact_modify', {'id': contact.id}) }}">Edytuj</a>
-    <a href="{{ path('contactbook_address_addadresses', {'id': contact.id}) }}">Dodaj adres zamieszkania</a>
+
+
     <section>
         <h3>Adres zamieszkania</h3>
+        <a href="{{ path('contactbook_address_addadresses', {'id': contact.id}) }}">Dodaj adres zamieszkania</a><br>
+        {% for address in addresses %}
+            <p>Miasto:{{ address.city }} Ulica: {{ address.street }} Numer domu: {{ address.number }} Numer mieszkania: {{ address.local }}
+                <a href="{{ path('contactbook_address_modify', {'id':contact.id, 'n':address.id})}}">Edytuj</a>
+                <a href="{{ path('contactbook_address_delete', {'id':contact.id, 'n':address.id})}}">Usuń adres</a>
+            </p>
+        {% else %}
+            {{ "Brak adresów" }}
+        {% endfor %}
+    </section>
+    <section>
+        <h3>Numer telefonu</h3>
+        <a href="{{ path('contactbook_phone_addphone', {'id': contact.id}) }}">Dodaj numer telefonu</a><br>
+        {% for phone in phones %}
+            <p>Numer telefonu: {{ phone.number }} Typ: {{ phone.type }}
+                <a href="{{ path('contactbook_phone_modify', {'id':contact.id, 'n':phone.id})}}">Edytuj</a>
+                <a href="{{ path('contactbook_phone_delete', {'id':contact.id, 'n':phone.id})}}">Usuń numer</a>
+            </p>
+        {% else %}
+            {{ "Brak numerów telefonu" }}
+        {% endfor %}
+    </section>
+    <section>
+        <h3>Adres Email</h3>
         {% for address in addresses %}
             <p>Miasto:{{ address.city }} Ulica: {{ address.street }} Numer domu: {{ address.number }} Numer mieszkania: {{ address.local }}
                 <a href="{{ path('contactbook_address_modify', {'id':contact.id, 'n':address.id})}}">Edytuj</a>

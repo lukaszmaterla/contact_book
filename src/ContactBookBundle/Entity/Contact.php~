@@ -42,9 +42,16 @@ class Contact
 
     private $addresses;
 
+    /**
+     * @ORM\OneToMany(targetEntity="ContactBookBundle\Entity\Phone", mappedBy="contact")
+     *
+     */
+    private $phones;
+
     public function __construct()
     {
         $this->addresses = new ArrayCollection();
+        $this->phones = new ArrayCollection();
     }
 
 

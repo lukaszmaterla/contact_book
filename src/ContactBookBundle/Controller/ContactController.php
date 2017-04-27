@@ -18,24 +18,25 @@ class ContactController extends Controller
     public function newCreateAction(Request $request)
     {
         $contact = new Contact();
-        
+
         $form = $this->createForm(ContactType::class, $contact, ['action' => $this->generateUrl('contactbook_contact_newcreate')]);
-        
+
         $form->handleRequest($request);
-        
-        if($form->isSubmitted() && $form->isValid()){
-            
-            $em= $this->getDoctrine()->getManager();
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $em = $this->getDoctrine()->getManager();
             $em->persist($contact);
             $em->flush();
-            
-            return $this->redirectToRoute('contactbook_contact_show', ['id'=> $contact->getId()]);
+
+            return $this->redirectToRoute('contactbook_contact_show', ['id' => $contact->getId()]);
         }
 
         return ['form' => $form->createView()];
 
-             
+
     }
+
     /**
      * @Route("/{id}")
      * @Template(":Contact:show.html.twig")
@@ -44,13 +45,17 @@ class ContactController extends Controller
     {
         $contact = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->find($id);
 
-        $addresses = $this->getDoctrine()->getRepository('ContactBookBundle:Address')->findAll();
+        $addresses = $this->getDoctrine()->getRepository('ContactBookBundle:Address')->findBy(['contact' => $contact->getId()]);
 
-        if(!$contact){
+        $phones = $this->getDoctrine()->getRepository('ContactBookBundle:Phone')->findBy(['contact' => $contact->getId()]);
+        if (!$contact) {
 
             throw $this->createNotFoundException("Contact not Found");
         }
-        return ['contact'=> $contact, 'addresses'=>$addresses];
+        return [
+            'contact' => $contact,
+            'addresses' => $addresses,
+            'phones' => $phones];
     }
 
     /**
@@ -59,9 +64,9 @@ class ContactController extends Controller
      */
     public function showAllAction()
     {
-        $contacts = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->findAll();
+        $contacts = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->findBy([], ['name' => 'ASC']);
 
-        return ['contacts'=> $contacts];
+        return ['contacts' => $contacts];
     }
 
     /**
@@ -70,17 +75,17 @@ class ContactController extends Controller
 
     public function deleteAction($id)
     {
-         $contact = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->find($id);
+        $contact = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->find($id);
 
-         if(!$contact){
-             throw $this->createNotFoundException("Contact not Found");
-         }
+        if (!$contact) {
+            throw $this->createNotFoundException("Contact not Found");
+        }
 
-         $em = $this->getDoctrine()->getManager();
-         $em->remove($contact);
-         $em->flush();
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($contact);
+        $em->flush();
 
-         return $this->redirectToRoute('contactbook_contact_showall');
+        return $this->redirectToRoute('contactbook_contact_showall');
     }
 
     /**
@@ -91,18 +96,17 @@ class ContactController extends Controller
     public function modifyAction(Request $request, $id)
     {
         $contact = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->find($id);
-        if(!$contact){
+        if (!$contact) {
             throw $this->createNotFoundException("Contact not Found");
         }
 
-        $form = $this->createForm(ContactType::class, $contact, ['action' => $this->generateUrl('contactbook_contact_modify', ['id'=>$contact->getId()])]);
+        $form = $this->createForm(ContactType::class, $contact, ['action' => $this->generateUrl('contactbook_contact_modify', ['id' => $contact->getId()])]);
         $form->handleRequest($request);
 
-        if($form->isValid() && $form->isSubmitted())
-        {
+        if ($form->isValid() && $form->isSubmitted()) {
             $em = $this->getDoctrine()->getManager();
             $em->flush();
-            return $this->redirectToRoute('contactbook_contact_show', ['id'=> $contact->getId()]);
+            return $this->redirectToRoute('contactbook_contact_show', ['id' => $contact->getId()]);
         }
 
         return ['form' => $form->createView()];
