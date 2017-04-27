@@ -48,6 +48,8 @@ class ContactController extends Controller
         $addresses = $this->getDoctrine()->getRepository('ContactBookBundle:Address')->findBy(['contact' => $contact->getId()]);
 
         $phones = $this->getDoctrine()->getRepository('ContactBookBundle:Phone')->findBy(['contact' => $contact->getId()]);
+
+        $emails = $this->getDoctrine()->getRepository('ContactBookBundle:Email')->findBy(['contact'=>$contact->getId()]);
         if (!$contact) {
 
             throw $this->createNotFoundException("Contact not Found");
@@ -55,7 +57,9 @@ class ContactController extends Controller
         return [
             'contact' => $contact,
             'addresses' => $addresses,
-            'phones' => $phones];
+            'phones' => $phones,
+            'emails'=> $emails
+        ];
     }
 
     /**

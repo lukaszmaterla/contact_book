@@ -33,10 +33,11 @@
     </section>
     <section>
         <h3>Adres Email</h3>
-        {% for address in addresses %}
-            <p>Miasto:{{ address.city }} Ulica: {{ address.street }} Numer domu: {{ address.number }} Numer mieszkania: {{ address.local }}
-                <a href="{{ path('contactbook_address_modify', {'id':contact.id, 'n':address.id})}}">Edytuj</a>
-                <a href="{{ path('contactbook_contact_delete', {'id':contact.id, 'n':address.id})}}">Usuń adres</a>
+    <a href="{{ path('contactbook_email_addemail', {'id': contact.id}) }}">Dodaj adres email</a><br>
+        {% for email in emails %}
+            <p>Adres email: {{ email.email }} Typ: {{ email.type }}
+                <a href="{{ path('contactbook_email_modify', {'id':contact.id, 'n':email.id})}}">Edytuj</a>
+                <a href="{{ path('contactbook_email_delete', {'id':contact.id, 'n':email.id})}}">Usuń adres</a>
             </p>
         {% else %}
             {{ "Brak adresów" }}

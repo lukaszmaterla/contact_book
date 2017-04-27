@@ -54,6 +54,10 @@ class Contact
         $this->phones = new ArrayCollection();
     }
 
+    /**
+     * @ORM\OneToMany(targetEntity="ContactBookBundle\Entity\Email", mappedBy="contact")
+     */
+    private $emails;
 
     /**
      * Get id
@@ -142,5 +146,38 @@ class Contact
     public function getAddresses()
     {
         return $this->addresses;
+    }
+
+    /**
+     * Add phones
+     *
+     * @param \ContactBookBundle\Entity\Phone $phones
+     * @return Contact
+     */
+    public function addPhone(\ContactBookBundle\Entity\Phone $phones)
+    {
+        $this->phones[] = $phones;
+
+        return $this;
+    }
+
+    /**
+     * Remove phones
+     *
+     * @param \ContactBookBundle\Entity\Phone $phones
+     */
+    public function removePhone(\ContactBookBundle\Entity\Phone $phones)
+    {
+        $this->phones->removeElement($phones);
+    }
+
+    /**
+     * Get phones
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPhones()
+    {
+        return $this->phones;
     }
 }

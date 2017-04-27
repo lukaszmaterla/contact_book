@@ -5,12 +5,12 @@ namespace ContactBookBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Phone
+ * Email
  *
- * @ORM\Table(name="phone")
- * @ORM\Entity(repositoryClass="ContactBookBundle\Repository\PhoneRepository")
+ * @ORM\Table(name="email")
+ * @ORM\Entity(repositoryClass="ContactBookBundle\Repository\EmailRepository")
  */
-class Phone
+class Email
 {
     /**
      * @var int
@@ -24,20 +24,19 @@ class Phone
     /**
      * @var string
      *
-     * @ORM\Column(name="number", type="string", length=20)
+     * @ORM\Column(name="email", type="string", length=100)
      */
-    private $number;
+    private $email;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="type", type="string", length=255)
+     * @ORM\Column(name="type", type="string", length=100)
      */
     private $type;
     /**
-     * @ORM\ManyToOne(targetEntity="ContactBookBundle\Entity\Contact", inversedBy="phones")
+     * @ORM\ManyToOne(targetEntity="ContactBookBundle\Entity\Contact", inversedBy="emails")
      */
-
     private $contact;
     /**
      * Get id
@@ -50,33 +49,33 @@ class Phone
     }
 
     /**
-     * Set number
+     * Set email
      *
-     * @param string $number
-     * @return Phone
+     * @param string $email
+     * @return Email
      */
-    public function setNumber($number)
+    public function setEmail($email)
     {
-        $this->number = $number;
+        $this->email = $email;
 
         return $this;
     }
 
     /**
-     * Get number
+     * Get email
      *
      * @return string 
      */
-    public function getNumber()
+    public function getEmail()
     {
-        return $this->number;
+        return $this->email;
     }
 
     /**
      * Set type
      *
      * @param string $type
-     * @return Phone
+     * @return Email
      */
     public function setType($type)
     {
@@ -99,7 +98,7 @@ class Phone
      * Set contact
      *
      * @param \ContactBookBundle\Entity\Contact $contact
-     * @return Phone
+     * @return Email
      */
     public function setContact(\ContactBookBundle\Entity\Contact $contact = null)
     {
