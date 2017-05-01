@@ -37,6 +37,12 @@ class Contact
     private $description;
 
     /**
+     * @ORM\ManyToMany(targetEntity="ContactBookBundle\Entity\ContactGroup", inversedBy="contacts" )
+     * @ORM\JoinTable("contact_group")
+     */
+    private $groups;
+
+    /**
      * @ORM\OneToMany(targetEntity="ContactBookBundle\Entity\Address", mappedBy="contact")
      */
 
@@ -52,6 +58,8 @@ class Contact
     {
         $this->addresses = new ArrayCollection();
         $this->phones = new ArrayCollection();
+        $this->emails = new ArrayCollection();
+        $this->groups = new ArrayCollection();
     }
 
     /**
@@ -179,5 +187,38 @@ class Contact
     public function getPhones()
     {
         return $this->phones;
+    }
+
+    /**
+     * Add emails
+     *
+     * @param \ContactBookBundle\Entity\Email $emails
+     * @return Contact
+     */
+    public function addEmail(\ContactBookBundle\Entity\Email $emails)
+    {
+        $this->emails[] = $emails;
+
+        return $this;
+    }
+
+    /**
+     * Remove emails
+     *
+     * @param \ContactBookBundle\Entity\Email $emails
+     */
+    public function removeEmail(\ContactBookBundle\Entity\Email $emails)
+    {
+        $this->emails->removeElement($emails);
+    }
+
+    /**
+     * Get emails
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getEmails()
+    {
+        return $this->emails;
     }
 }

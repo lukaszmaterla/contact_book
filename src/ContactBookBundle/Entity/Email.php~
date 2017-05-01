@@ -93,4 +93,27 @@ class Email
     {
         return $this->type;
     }
+
+    /**
+     * Set contact
+     *
+     * @param \ContactBookBundle\Entity\Contact $contact
+     * @return Email
+     */
+    public function setContact(\ContactBookBundle\Entity\Contact $contact = null)
+    {
+        $this->contact = $contact;
+
+        return $this;
+    }
+
+    /**
+     * Get contact
+     *
+     * @return \ContactBookBundle\Entity\Contact 
+     */
+    public function getContact()
+    {
+        return $this->contact;
+    }
 }
