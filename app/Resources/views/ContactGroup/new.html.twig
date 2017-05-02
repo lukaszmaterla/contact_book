@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h2>Dodaj grupe</h2>
+    {{ form_start(formGroup) }}
+    {{ form_widget(formGroup) }}
+    <button type="submit">Zapisz</button>
+    {{ form_end(formGroup) }}
+{% endblock %}
