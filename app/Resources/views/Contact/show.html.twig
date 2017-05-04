@@ -41,4 +41,17 @@
             {{ "Brak adresów" }}
         {% endfor %}
     </section>
+    <section>
+        <h3>Grupy:</h3>
+        <ul>
+        {% for group in groups %}
+            <li>{{ group.name }}
+                <a href="{{ path('contactbook_contactgroup_showonegroup', {'id':group.id})}}">Pokaż inne kontakty grupy</a>
+                {#<a href="{{ path('contactbook_email_delete', {'id':contact.id, 'n':email.id})}}">Usuń adres</a>#}
+            </li>
+        {% else %}
+            {{ "Brak Group" }}
+        {% endfor %}
+        </ul>
+    </section>
 {% endblock %}

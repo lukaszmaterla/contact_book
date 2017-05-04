@@ -17,7 +17,7 @@ class ContactType extends AbstractType
         $builder
             ->add('name')
             ->add('description')
-            ->add('groups', null, ['choice_label'=>'name']);
+            ->add('groups', null, ['choice_label'=>'name', 'required'=> false]);
     }
     
     /**

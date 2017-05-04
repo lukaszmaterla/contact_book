@@ -51,7 +51,7 @@ class ContactGroupController extends Controller
     }
     /**
      * @Route("/{id}")
-     * @Template(":ContactGroup:show_groups.html.twig")
+     * @Template(":ContactGroup:show_one_group.html.twig")
      */
     public function showOneGroupAction($id)
     {
@@ -60,7 +60,14 @@ class ContactGroupController extends Controller
             throw $this->createNotFoundException("Group not Found");
         }
 
-        return ['group'=> $group];
+        $contacts = $this->getDoctrine()->getRepository('ContactBookBundle:Contact')->createQueryBuilder('c')
+            ->innerJoin('c.groups', 'g')
+            ->where('g.id = :group_id')
+            ->setParameter('group_id', $group->getId())
+            ->getQuery()->getResult();
+
+        return ['group'=> $group,
+            'contacts'=> $contacts];
 
     }
 

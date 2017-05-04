@@ -4,7 +4,7 @@
     <ul>
         {% for group in groups %}
             <li>
-                <a href="{{ path('contactbook_contactgroup_showgroups')}}">{{ group.name }}</a>
+                <a href="{{ path('contactbook_contactgroup_showonegroup', {'id': group.id})}}">{{ group.name }}</a>
             </li>
             <a href="{{ path('contactbook_contactgroup_modifygroup', {'id': group.id}) }}">Edytuj</a>
             <a href="{{ path('contactbook_contactgroup_delete', {'id': group.id}) }}">Usuń</a>
@@ -13,4 +13,5 @@
         {% endfor %}
     </ul>
     <br><a href="{{ path('contactbook_contactgroup_newgroup') }}">Dodaj nową grupę</a>
+    <br><a href="{{ path('contactbook_contact_showall') }}">Kontakty</a>
 {% endblock %}

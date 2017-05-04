@@ -54,11 +54,18 @@ class ContactController extends Controller
 
             throw $this->createNotFoundException("Contact not Found");
         }
+        $groups = $this->getDoctrine()->getRepository('ContactBookBundle:ContactGroup')->createQueryBuilder('g')
+            ->innerJoin('g.contacts', 'c')
+            ->where('c.id = :contact_id')
+            ->setParameter('contact_id', $contact->getId())
+            ->getQuery()->getResult();
+
         return [
             'contact' => $contact,
             'addresses' => $addresses,
             'phones' => $phones,
-            'emails'=> $emails
+            'emails'=> $emails,
+            'groups'=>$groups
         ];
     }
 

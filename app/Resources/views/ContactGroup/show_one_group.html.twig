@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h2>{{ group.name }}</h2>
+<ul>
+    {% for contact in contacts %}
+        <li>
+            <a href="{{ path('contactbook_contact_show', {'id': contact.id}) }}">{{ contact.name }}</a>
+        </li>
+        <a href="{{ path('contactbook_contact_delete', {'id': contact.id}) }}">Usuń</a>
+        <a href="{{ path('contactbook_contact_modify', {'id': contact.id}) }}">Edytuj</a>
+    {% else %}
+        {{ "Not found" }}
+    {% endfor %}
+</ul>
+    <a href="{{ path('contactbook_contactgroup_showgroups') }}">Grupy</a>
+{% endblock %}
