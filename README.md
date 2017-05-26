@@ -1,11 +1,26 @@
-Project made in symfony 2.8. This project use the Twig view templates and provide data base communication with Doctrine.
+# Contact book
 
-The following functionality was introduced in the project:
-  1. The user can see all your contacts after passing to the main page.
-  2. The user can add a new contact, also modify and delete existing contacts.
-  3. The user can add to each contact:
-    a) many addresses (also modify and delete),
-    b) many telephones (also modify and delete),
-    c) many emails (also modify and delete).
-  4. The user can add groups to their contacts.
-  5. The application can view all users in the group and all groups for the selected user.
+Project made in Symfony 2.8
+
+### Used technologies:
+
+- PHP:
+    - Symfony:
+        - Twig
+        - Doctrine 2
+- Bootstrap
+
+### Application description:
+
+- user can see all your contacts after passing to the main page.
+- user can add a new contact, also modify and delete existing contacts.
+- user can add to each contact:
+    - many addresses (also modify and delete)
+    - many telephones (also modify and delete)
+    - many emails (also modify and delete)
+- user can add groups to their contacts.
+- application can view all users in the group and all groups for the selected user.
+
+### Author
+
+* **Łukasz Materla** - [Profile](https://github.com/lukaszmaterla)
